@@ -1,0 +1,2 @@
+module HighriseHelper
+end

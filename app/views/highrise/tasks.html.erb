@@ -1,0 +1,10 @@
+<div><h1>All Task's List</h1></div>
+<table>
+ <thead><tr>
+  <td><b>Task Description</b></td>
+  <td><b>Due Date</b></td>
+</tr></thead>
+<%@tasks.each do |task|%>
+ <tr><td> <%= task.body%></td><td> <%= task.due_at%></td></tr> 
+<%end%>
+</table>

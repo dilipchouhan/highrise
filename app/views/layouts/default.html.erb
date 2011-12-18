@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Highrise</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>	
+<div align='right'><%= link_to 'logout' , destroy_admin_session_path,:method=>:delete %></div>
+<%= yield %>
+
+</body>
+</html>
